@@ -1,0 +1,35 @@
+# Ignore compiled binaries and executables
+*.o
+*.out
+
+# Ignore generated files and logs
+*.log
+*.txt
+
+# Ignore temporary files and backups
+*~
+*.bak
+
+# Ignore user-specific files
+.bash_history
+.bashrc
+.profile
+
+# Ignore directories
+/bin/
+/lib/
+/tmp/
+
+# Ignore also directories
+demos/
+exercises/
+
+# Atom editor specific files
+.idea/
+.vscode/
+
+# Ignore Atom project settings
+.atom/
+
+# Ignore testing files
+*test*
