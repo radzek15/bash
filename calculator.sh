@@ -7,10 +7,8 @@ echo -e " What do you want to do? {1:add, 2:substract, 3:multiply, 4:divide}"
 
 #creating a choice
 read choice
-echo Enter first number:
-read num1
-echo Enter second number:
-read num2
+read -p "Enter first number:" num1
+read -p "Enter second number:" num2
 ((sum=$num1+num2))
 ((sub=$num1-num2))
 ((mul=$num1*num2))
