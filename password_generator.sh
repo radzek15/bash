@@ -1,10 +1,9 @@
 #!/bin/sh
-export LC_ALL=C
 
 read -p "Enter the length of a password (preffered 16): " length
 
-while [ $length -lt 3 ]; do
-  read -p "Password will be too weak (at least 3 characters): " length
+while [ $length -lt 4 ]; do
+  read -p "Password will be too weak (at least 4 characters): " length
 done
 
 
