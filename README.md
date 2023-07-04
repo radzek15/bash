@@ -7,3 +7,6 @@
 
   ## 3. password generator
     - Script that generates password according to chosen length.
+
+  ## 4. add del user
+    - Script to automatically add new users and delete users that are no longer needed.
