@@ -2,9 +2,10 @@
 *.o
 *.out
 
-# Ignore generated files and logs
+# Ignore generated files, logs, configuration
 *.log
 *.txt
+*.conf
 
 # Ignore temporary files and backups
 *~
