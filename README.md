@@ -1,4 +1,4 @@
-# Bash scripts i Wrote
+# Bash scripts i wrote
   ## 1. calculator
     - Perform an operation of user choice on two numbers.
 
