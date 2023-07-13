@@ -8,6 +8,6 @@ case $choice in
   1) echo "result is: $((num1+num2))";;
   2) echo "result is: $((num1-num2))";;
   3) echo "result is: $((num1*num2))";;
-  4) echo result is: $(echo "scale=2; $num1/$num2" | bc);;
+  4) echo "result is: $(echo "scale=2; $num1/$num2" | bc)";;
   *) echo "Your pick is out of range. Calculator will be terminated." && exit 1;;
 esac
