@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 read -p "Choose operation type{1:add, 2:substract, 3:multiply, 4:divide}: " choice
 read -p "Enter first number:" num1
