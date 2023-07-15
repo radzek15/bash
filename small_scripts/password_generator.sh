@@ -2,10 +2,10 @@
 
 length=16
 
-while getopts l: option ; do
+while getopts ":l:" option ; do
   case $option in
     l) length="$OPTARG";;
-    *) echo " Invalid option" && exit 1;;
+    ?) echo " Invalid option" && exit 1;;
   esac
 done
 
