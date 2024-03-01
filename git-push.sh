@@ -10,8 +10,8 @@ git status
 read -rp "Enter commit message: " commit_message
 if git commit -m "$commit_message"; then
 
-    echo "Your actual branch is: $(git branch)"
-    read -rp "Enter branch name: " branch
+    echo "You work on branch: $(git branch)"
+    read -rp "Enter branch name you want to push changes: " branch
 
     git push -u origin "$branch"
 fi
