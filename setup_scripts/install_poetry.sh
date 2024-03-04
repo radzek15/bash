@@ -4,6 +4,11 @@ install_poetry(){
   curl -sSL https://install.python-poetry.org | python3 -
   export PATH="/home/${USER}/.local/bin:$PATH"
   poetry --version
+  if [ "$(basename $SHELL)" = "zsh" ]; then
+    echo 'export PATH="/home/${USER}/.local/bin:$PATH"' >> ~/.zshrc
+  else
+    echo 'export PATH="/home/${USER}/.local/bin:$PATH"' >> ~/.bashrc
+  fi
 }
 
 update_poetry(){

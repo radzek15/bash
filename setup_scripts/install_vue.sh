@@ -7,7 +7,12 @@ install_node(){
   echo "Node: $(nodejs -v) npm: $(npm -v)"
   mkdir ~/.npm-global
   npm config set prefix '~/.npm-global'
-  export PATH=~/.npm-global/bin:$PATH
+
+  if [ "$(basename $SHELL)" = "zsh" ]; then
+    echo 'export PATH="$(npm config get prefix)/bin:$PATH"' >> ~/.zshrc
+  else
+    echo 'export PATH="$(npm config get prefix)/bin:$PATH"' >> ~/.bashrc
+  fi
 
   return $?
 }
